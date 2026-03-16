@@ -39,3 +39,6 @@ main {
   margin: 40px auto;
   padding: 20px;
 }
+body {
+  cursor: url('assets/cursor.png'), auto;
+}
