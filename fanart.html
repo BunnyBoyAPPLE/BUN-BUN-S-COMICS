@@ -6,6 +6,20 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<script>
+document.addEventListener("mousemove", function(e) {
+  const trail = document.createElement("div");
+  trail.className = "trail";
+  trail.style.left = e.pageX + "px";
+  trail.style.top = e.pageY + "px";
+  trail.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 60%)`;
+  document.body.appendChild(trail);
+
+  setTimeout(() => {
+    trail.remove();
+  }, 500);
+});
+</script>
 
 <header>
   <img src="assets/banner.png" alt="Bun Bun's Comics Banner">
